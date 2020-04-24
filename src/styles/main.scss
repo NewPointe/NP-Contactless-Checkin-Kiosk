@@ -1,0 +1,57 @@
+
+* { box-sizing: border-box; }
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    // Tiled background svg
+    background: url('../Assets/Images/background.svg') repeat top left, linear-gradient(#f7941d, #f67a22) fixed;
+    // Fade in the UI
+    animation: fadein 0.8s;
+    // Disable any special actions on tap/touch
+    -ms-touch-action: none !important;
+    touch-action: none;
+    // Disable zooming
+    -ms-content-zooming: none;
+    // System fonts
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+.scanner-border {
+    position: relative;
+    border: solid 25px black;
+    border-radius: 20px;
+    &::after {
+        display: inline-block;
+        position: absolute;
+        right: -100px;
+        top: 50%;
+        margin-top: -50px;
+        content: '';
+        border-width: 50px 0 50px 50px;
+        border-color: transparent black;
+        border-style: solid;
+      }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@import "flex";
+@import "grid";
+@import "spa-core";
+@import "spinner";
+@import "util";

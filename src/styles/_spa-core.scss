@@ -1,0 +1,19 @@
+.spa-page-instance,
+.spa-overlay-instance,
+.spa-loading-instance,
+.spa-page-root,
+.spa-overlays-root,
+.spa-loading-root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.spa-overlay-instance,
+.spa-loading-instance,
+.spa-page-root,
+.spa-overlays-root,
+.spa-loading-root {
+    position: absolute;
+}

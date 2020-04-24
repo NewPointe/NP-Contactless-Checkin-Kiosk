@@ -1,0 +1,34 @@
+.bg-white {
+    background-color: white;
+}
+
+.padding-3 {
+    padding: 1em;
+}
+
+.gap-3 {
+    gap: 1em;
+    grid-gap: 1em;
+}
+
+.fill-parent {
+    width: 100%;
+    height: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.divider-right {
+    border-right: solid 1px black;
+}
+
+.overlay-container {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
